@@ -1,21 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Yelda Özgezerim | AI Evaluation Portfolio</title>
+<title>Yelda Özgezerim | AI Evaluation Portfolio</title>
 
-  <meta name="description"
-        content="Portfolio of Yelda Özgezerim — AI evaluation, RLHF, data annotation, prompt engineering and Turkish language quality work.">
+<meta name="description" content="Yelda Özgezerim — AI Evaluation, RLHF, Data Annotation, Prompt Engineering and Turkish Language Quality.">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0d1117;
+  color:#e6edf3;
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1050px,90%);margin:auto}
 
-    html {
-      scroll-behavior: smooth;
-    }
+nav{
+  border-bottom:1px solid #30363d;
+  background:#0d1117;
+  position:sticky;
+  top:0;
+}
+.nav{
+  min-height:65px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.nav strong{font-size:18px}
+.nav-links{display:flex;gap:22px;color:#b1bac4;font-size:14px}
+
+.hero{
+  min-height:78vh;
+  display:flex;
+  align-items:center;
+  background:
+  radial-gradient(circle at 20% 20%,rgba(137,87,229,.22),transparent 35%),
+  radial-gradient(circle at 80% 60%,rgba(31,111,235,.12),transparent 30%);
+}
+.hero-inner{padding:80px 0;max-width:850px}
+
+.badge{
+  display:inline-block;
+  color:#d2c2ff;
+  border:1px solid #8957e5;
+  padding:7px 14px;
+  border-radius:30px;
+  margin-bottom:22px;
+  font-size:14px;
+}
+
+h1{
+  font-size:clamp(44px,7vw,76px);
+  line-height:1.05;
+  margin:0 0 15px;
+}
+.hero h2{
+  color:#a371f7;
+  font-size:clamp(22px,3vw,31px);
+  margin:0 0 20px;
+}
+.hero p{color:#b1bac4;font-size:18px;max-width:780px}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px;
+}
+.btn{
+  padding:11px 18px;
+  border:1px solid #30363d;
+  border-radius:8px;
+  font-weight:600;
+}
+.primary{
+  background:#8957e5;
+  border-color:#8957e5;
+  color:white;
+}
+
+section{padding:80px 0}
+section h2{font-size:32px;margin:0 0 10px}
+.intro{color:#8b949e;max-width:760px;margin-bottom:35px}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.card{
+  background:#161b22;
+  border:1px solid #30363d;
+  border-radius:12px;
+  padding:24px;
+}
+.card h3{margin-top:0}
+.card p{color:#8b949e}
+.label{
+  color:#a371f7;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.project-link{
+  display:inline-block;
+  margin-top:12px;
+  color:#a371f7;
+  font-weight:bold;
+}
+
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skill{
+  background:#161b22;
+  border:1px solid #30363d;
+  padding:9px 13px;
+  border-radius:7px;
+}
+
+.creative{
+  background:#161b22;
+  border:1px solid #30363d;
+  border-radius:14px;
+  padding:30px;
+}
+
+.center{text-align:center}
+
+footer{
+  border-top:1px solid #30363d;
+  text-align:center;
+  padding:25px;
+  color:#6e7681;
+}
+
+@media(max-width:750px){
+  .grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="wrap nav">
+    <strong>Yelda Özgezerim</strong>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+
+    <div class="badge">
+      AI Evaluation · Prompt Engineering · Turkish Language
+    </div>
+
+    <h1>Yelda Özgezerim</h1>
+
+    <h2>AI Evaluator & Turkish Language Specialist</h2>
+
+    <p>
+      I work across AI evaluation, data annotation, preference-based
+      response assessment, prompt engineering practice and Turkish
+      language quality review. My focus is careful guideline
+      interpretation, linguistic accuracy and consistent human evaluation
+      of AI-generated content.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#projects">View Portfolio</a>
+
+      <a class="btn"
+         href="https://github.com/yeldaozgezerim"
+         target="_blank">GitHub</a>
+
+      <a class="btn"
+         href="https://www.linkedin.com/in/yelda-ozgezerim-985368104"
+         target="_blank">LinkedIn</a>
+    </div>
+
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+
+    <h2>About</h2>
+
+    <p class="intro">
+      My work combines language expertise, structured evaluation and
+      human judgment. I am especially interested in assessing AI response
+      quality through clear criteria and consistent guideline-based review.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>AI Evaluation</h3>
+        <p>
+          Reviewing and comparing AI-generated responses for relevance,
+          factuality, instruction following, completeness and overall quality.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Turkish Language Quality</h3>
+        <p>
+          Evaluating Turkish for naturalness, grammar, meaning, localization,
+          register, clarity and linguistic consistency.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Prompt Engineering</h3>
+        <p>
+          Studying prompt structure, instruction design, output control and
+          evaluation-oriented prompting through practical examples.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+
+    <h2>Skills</h2>
+    <p class="intro">Current areas of professional work and development.</p>
+
+    <div class="skills">
+      <span class="skill">AI Response Evaluation</span>
+      <span class="skill">RLHF-style Evaluation</span>
+      <span class="skill">Preference Ranking</span>
+      <span class="skill">Data Annotation</span>
+      <span class="skill">Prompt Engineering</span>
+      <span class="skill">Instruction Following</span>
+      <span class="skill">Factuality Review</span>
+      <span class="skill">Turkish Localization</span>
+      <span class="skill">Language Quality</span>
+      <span class="skill">Transcription</span>
+      <span class="skill">Quality Assurance</span>
+      <span class="skill">Guideline-based Review</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+
+    <h2>Selected Work</h2>
+
+    <p class="intro">
+      Independent public projects created for professional development
+      and AI evaluation practice.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="label">Prompt Engineering</div>
+        <h3>Modern Prompt Engineering Notes</h3>
+        <p>
+          Study notes based on Anthropic's public prompt engineering
+          materials, rewritten and expanded with practical examples and
+          an AI evaluation perspective.
+        </p>
+        <a class="project-link"
+           href="https://github.com/yeldaozgezerim/modern-prompt-engineering-notes"
+           target="_blank">View project →</a>
+      </div>
+
+      <div class="card">
+        <div class="label">AI Evaluation</div>
+        <h3>AI Response Evaluation Samples</h3>
+        <p>
+          Original portfolio cases covering response comparison,
+          factuality, instruction following and evaluator justification.
+        </p>
+        <span class="project-link">In progress</span>
+      </div>
+
+      <div class="card">
+        <div class="label">Turkish Language</div>
+        <h3>Turkish AI Language Evaluation</h3>
+        <p>
+          Original evaluation examples focused on natural Turkish,
+          localization, grammar, register and semantic accuracy.
+        </p>
+        <span class="project-link">Coming next</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+
+    <div class="creative">
+      <h2>Creative Background</h2>
+
+      <p>
+        My background in visual arts and creative work has strengthened
+        my attention to detail, interpretation, visual judgment and
+        human-centered evaluation.
+      </p>
+
+      <div class="buttons">
+        <a class="btn"
+           href="https://www.instagram.com/y_yodesignnn/"
+           target="_blank">View Creative Work</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="center">
+  <div class="wrap">
+
+    <h2>Connect</h2>
+
+    <p class="intro" style="margin-left:auto;margin-right:auto">
+      Public work and professional profiles.
+    </p>
+
+    <div class="buttons" style="justify-content:center">
+
+      <a class="btn primary"
+         href="https://github.com/yeldaozgezerim"
+         target="_blank">GitHub</a>
+
+      <a class="btn"
+         href="https://www.linkedin.com/in/yelda-ozgezerim-985368104"
+         target="_blank">LinkedIn</a>
+
+      <a class="btn"
+         href="https://www.instagram.com/y_yodesignnn/"
+         target="_blank">Instagram</a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Yelda Özgezerim · AI Evaluation Portfolio
+</footer>
+
+</body>
+</html>
